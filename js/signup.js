@@ -29,9 +29,5 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log('Repeated Email:', repEmail);
         console.log('Password:', password);
         console.log('Repeated Password:', repPassword);
-
-        // You can submit the form here or perform any other actions
-        // For example, uncomment the line below to submit the form
-        // form.submit();
     });
 });
