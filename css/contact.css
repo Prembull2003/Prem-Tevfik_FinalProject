@@ -5,6 +5,8 @@ body {
   
   * {
     box-sizing: border-box;
+    margin: 0;
+  
   }
   
   /* Add padding to containers */
@@ -13,9 +15,44 @@ body {
     background-color: white;
   }
 
+  
+nav {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 21px;
+}
+
+ nav{
+  background-color: gray;
+}
+
+ nav a:hover{
+  color:black;
+  text-decoration: underline !important;
+}
+
+ nav a:link{
+  color:black;
+  text-decoration: none;
+}
+ nav a:visited{
+  color: black;
+}
+
+ nav a {
+  color: black;
+}
+
   header {
     text-align: center;
     text-transform: uppercase;
+    margin-top: 0.5%;
+  }
+
+  main{
+    margin: 1%;
   }
   
   /* Full-width input fields */
@@ -45,8 +82,18 @@ body {
 
   footer {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 5px;
+    
   }
+
+  ul {
+    list-style-type: none;  
+}
+
+li {
+    line-height: 40px;
+}
+
   
   /* Set a style for the submit button */
   .registerbtn {
@@ -75,6 +122,22 @@ body {
     color: dodgerblue;
   }
   
+
+  header h1 a:hover{
+    color:dodgerblue;
+    text-decoration: underline !important;
+}
+
+
+header h1 a:link{
+    color:dodgerblue;
+    text-decoration: none;
+}
+ header h1 a:visited{
+    color: dodgerblue;
+    text-decoration: none;
+}
+
   
   .signin {
     background-color: #f1f1f1;
@@ -84,3 +147,42 @@ body {
   #copyright {
     margin-top: 35px;
   }
+
+  footer a{
+    color: dodgerblue;
+  }
+  
+ footer a:hover{
+    color:dodgerblue;
+    text-decoration: underline !important;
+}
+
+
+footer  a:link{
+    color:dodgerblue;
+    text-decoration: none;
+}
+ footer  a:visited{
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+
+fieldset a{
+  color: dodgerblue;
+}
+
+fieldset a:hover{
+  color:dodgerblue;
+  text-decoration: underline !important;
+}
+
+
+fieldset  a:link{
+  color:dodgerblue;
+  text-decoration: none;
+}
+fieldset  a:visited{
+  color: dodgerblue;
+  text-decoration: none;
+}
