@@ -17,7 +17,10 @@ body {
 
   
 nav {
-  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  
   text-transform: uppercase;
   padding-top: 20px;
   padding-bottom: 10px;
@@ -76,9 +79,9 @@ nav {
     margin-bottom: 25px;
   }
 
-  button {
-    border-radius: 12px;
-  }
+button {
+  border-radius: 12px;
+}
 
   footer {
     text-align: center;
@@ -185,4 +188,24 @@ fieldset  a:link{
 fieldset  a:visited{
   color: dodgerblue;
   text-decoration: none;
+}
+
+
+/* Mobile View */
+@media only screen and (max-width: 768px){
+
+  nav {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      
+      text-transform: uppercase;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      font-size: 21px;
+      
+  }
+
+
+
 }

@@ -1,11 +1,11 @@
-// Save this code in a file, for example, script.js
-
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector('form');
 
     form.addEventListener('submit', function (event) {
         event.preventDefault();
 
+        const firstName = document.getElementById('first-name').value;
+        const lastName = document.getElementById('last-name').value;
         const email = document.getElementById('email').value;
         const repEmail = document.getElementById('rep-email').value;
         const password = document.getElementById('psw').value;
@@ -23,15 +23,16 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
+        // Display a greeting alert with the first and last name
+        alert(`Welcome, ${firstName} ${lastName}!`);
+
         // Continue with form submission or any other actions
         // For now, we'll just log the form data
+        console.log('First Name:', firstName);
+        console.log('Last Name:', lastName);
         console.log('Email:', email);
         console.log('Repeated Email:', repEmail);
         console.log('Password:', password);
         console.log('Repeated Password:', repPassword);
-
-        // You can submit the form here or perform any other actions
-        // For example, uncomment the line below to submit the form
-        // form.submit();
     });
 });

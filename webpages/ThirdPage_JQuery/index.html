@@ -3,52 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sports and Blasters</title>
+    <title>Sports and Blasters: Games</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.min.css">
      <!--Image Credits: https://pngtree.com/so/arcade -->
-     <link rel="icon" href="images/icon1.png" type="images/png">
+     <link rel="icon" href="../../images/icon1.png" type="images/png">
 </head>
 <body>
     <div class="top">    
         <nav>
         <a href="#">About</a>&nbsp;&nbsp;
-        <a href="index.html">Home</a>&nbsp;&nbsp;
-        <a href="webpages/signup.html">Register</a>&nbsp;&nbsp;
+        <a href="../../index.html">Home</a>&nbsp;&nbsp;
+        <a href="../signup.html">Register</a>&nbsp;&nbsp;
         <a href="#">Games</a>&nbsp;&nbsp;
-        <a href="#">Gallery</a>&nbsp;&nbsp;
+        <a href="../FourthPage_CSSGrid_and_FlexBox/index.html">Gallery</a>&nbsp;&nbsp;
         </nav>
         <header>
-            <h1><a href="#">Sports and Blasters</a></h1>
+            <h1><a href="../../index.html">Sports and Blasters</a></h1>
+            <div id="backimg-div">
+                <img class="backimg" src="../../images/BackGround.jpg" alt="Arcade Background" width="400" height="400">
             <!--Image Credits: https://pixabay.com/photos/pinball-videogame-arcade-games-179631/-->
-            <img class="backimg" src="images/BackGround.jpg" alt="Arcade Background" width="400" height="400">
+            </div>
         </header>
-        </div> 
+    </div> 
 
         <div class="content">
 
+            <div id="section-description">
+                <h2>Our Games</h2>
+                <p> Here are some of the classics we offer...</p>
 
+            </div>
 
-            <ul id="bxslider-1"class="bxslider">
-                <li><img src="images/neo-1.jpeg"  /></li>
-                <li><img src="images/neo-2.jpg" /></li>
-                <li><img src="images/neo-3.jpeg" /></li>
-                
+        <div id="box-image-section">
+            <div id="box-image-outer">
+                <ul id="bxslider-1"class="bxslider">
+                    <li><img src="../ThirdPage_JQuery/images/pacman.jpg"  /> 
+                        <div class="caption">Pacman, 1980.</div></li>
+                    <!-- Image Credits: https://static.wikia.nocookie.net/nintendo/images/2/29/Pac-Man_%28Namco%29_%28NES%29_%28NA%29.jpg/revision/latest?cb=20221216043048&path-prefix=en -->
+                    <li><img src="../ThirdPage_JQuery/images/donkey_kong.webp" /> 
+                        <div class="caption">Donkey Kong, 1981.</div></li>
+                    <!-- Image Credits: https://static.wikia.nocookie.net/nes/images/9/9f/Donkey_Kong.JPG/revision/latest?cb=20080807232845 -->
+                    <li><img src="../ThirdPage_JQuery/images/mario.jpg" /> 
+                        <div class="caption">Super Marios Bros, 1985.</div></li>
+                    <!-- Image Credits: https://m.media-amazon.com/images/I/61YsLmWf9-L._AC_UF894,1000_QL80_.jpg -->
+
+                    
+                </ul>
+        
+                <div id="bx-pager-1" class="bx-pagerr">
+                    <a data-slide-index="0" href=""><img src="../ThirdPage_JQuery/images/pacman.jpg" /></a>
+                    <!-- Image Credits: https://static.wikia.nocookie.net/nintendo/images/2/29/Pac-Man_%28Namco%29_%28NES%29_%28NA%29.jpg/revision/latest?cb=20221216043048&path-prefix=en -->
+                    <a data-slide-index="1" href=""><img src="../ThirdPage_JQuery/images/donkey_kong.webp" /></a>
+                    <!-- Image Credits: https://static.wikia.nocookie.net/nes/images/9/9f/Donkey_Kong.JPG/revision/latest?cb=20080807232845 -->
+                    <a data-slide-index="2" href=""><img src="../ThirdPage_JQuery/images/mario.jpg" /></a>
+                    <!-- Image Credits: https://m.media-amazon.com/images/I/61YsLmWf9-L._AC_UF894,1000_QL80_.jpg -->
+
+                  </div>
+        
+            </div>
+            </div>
+            
+
+        <div id="ending-description">
+
+            <p>
+                And many more... come find out!
+            </p>
+
+        </div>
+
+    </div>
+
+    <footer>
+        
+        <div id="store-hours">
+            <h3>Store Hours</h3>
+            <p>Monday - Saturday: 9:00AM - 12:00AM</p>
+            <p id="end-of-store-hours">Sundays: 9:00AM - 11:00PM</p>
+        </div>
+        <div id="list">
+            <h3>Terms and Conditions</h3>
+            <ul class="List1">
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Site Map</a></li>
             </ul>
-    
-            <div id="bx-pager-1" class="bx-pagerr">
-                <a data-slide-index="0" href=""><img src="images/neo-1.jpeg" /></a>
-                <a data-slide-index="1" href=""><img src="images/neo-2.jpg" /></a>
-                <a data-slide-index="2" href=""><img src="images/neo-3.jpeg" /></a>
-              </div>
-    
-    
         </div>
-
-
-
-
-
-        </div>
-
+       
     
+        <hr>
+        <br>
+        <h3 id="contact">Contact</h3>
+        Phone: <a href="tel:6135550169">613-555-0169</a>
+        <br><br>
+        Email: <a href="mailto:support@sportsblasters.ca">support@sportandsblasters.ca</a>
+        <br>
+        <p class="social">Follow us on social media: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">TikTok</a></p>
+    
+       
+      
+      
+    
+        
+     
+     
+       <p>&copy; Copyright Sports and Blasters | Prem Bulsara & Tevfik Ozlen 2023 </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"> </script>
+    <script src="js/script.js" ></script>
+    <script src="js/jquery.bxslider.min.js"> </script>
+
 </body>
 </html>
