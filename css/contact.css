@@ -4,96 +4,218 @@ body {
   color: white;
   width: 100%;
   margin: 0;
-}
 
-* {
-  box-sizing: border-box;
-}
+  }
 
-/* Add padding to containers */
-.container {
-  padding: 16px;
-  background-color: black;
-  color: white;
-}
+  .black-text{
+    color: black;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+    background-color: white;
+    color: black;
+  
+  }
 
-
-.signin-button {
-  background-color: white;
-  color: white;
-  width: 210px;
-  height: 40px;
-}
-
-header {
-  text-align: center;
+  
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  
   text-transform: uppercase;
-  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 21px;
 }
 
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #333; /* Changed background color to dark gray */
-  color: white;
+ nav{
+  background-color: gray;
 }
 
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #555; /* Darker gray on focus */
-  outline: none;
+ nav a:hover{
+  color:black;
+  text-decoration: underline !important;
 }
 
-/* Overwrite default styles of hr */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
+ nav a:link{
+  color:black;
+  text-decoration: none;
 }
+ nav a:visited{
+  color: black;
+}
+
+ nav a {
+  color: black;
+}
+
+  header {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0.5%;
+  }
+
+  main{
+    margin: 1%;
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
 
 button {
   border-radius: 12px;
 }
 
-footer {
-  text-align: center;
-  margin-top: 50px;
-  color: white;
+  footer {
+    text-align: center;
+    margin-top: 5px;
+    
+  }
+
+  ul {
+    list-style-type: none;  
 }
 
-/* Set a style for the submit button */
-.registerbtn {
-  background-color: red;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 200px;
-  font-size: 1.5em;
-  opacity: 0.9;
-  transition: opacity 0.15s;
+li {
+    line-height: 40px;
 }
 
-.registerbtn:hover {
-  opacity: 2;
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: red;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    font-size: 1.5em;
+    opacity: 0.9;
+    transition: opacity 0.15s;
+  }
+  
+  .registerbtn:hover {
+    opacity: 2;
+  }
+  
+  .registerbtn:active {
+    opacity: 0.85;
+  }
+
+  
+  a {
+    color: dodgerblue;
+  }
+  
+
+  header h1 a:hover{
+    color:dodgerblue;
+    text-decoration: underline !important;
 }
 
-.registerbtn:active {
-  opacity: 0.85;
+
+header h1 a:link{
+    color:dodgerblue;
+    text-decoration: none;
+}
+ header h1 a:visited{
+    color: dodgerblue;
+    text-decoration: none;
 }
 
-a {
+  
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+
+  #copyright {
+    margin-top: 35px;
+  }
+
+  footer a{
+    color: dodgerblue;
+  }
+  
+ footer a:hover{
+    color:dodgerblue;
+    text-decoration: underline !important;
+}
+
+
+footer  a:link{
+    color:dodgerblue;
+    text-decoration: none;
+}
+ footer  a:visited{
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+
+fieldset a{
   color: dodgerblue;
 }
 
-.signin {
-  background-color: #333; /* Dark gray background */
-  text-align: center;
+fieldset a:hover{
+  color:dodgerblue;
+  text-decoration: underline !important;
 }
 
-#copyright {
-  margin-top: 35px;
+
+fieldset  a:link{
+  color:dodgerblue;
+  text-decoration: none;
+}
+fieldset  a:visited{
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+
+/* Mobile View */
+@media only screen and (max-width: 768px){
+
+  nav {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      
+      text-transform: uppercase;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      font-size: 21px;
+      
+  }
+
+
+
 }

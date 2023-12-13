@@ -9,20 +9,62 @@ body {
 }
 
 nav {
-    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    
     text-transform: uppercase;
     padding-top: 20px;
     padding-bottom: 10px;
     font-size: 21px;
+    
 }
 
-nav a {
-    color: wheat;
+.top nav{
+    background-color: gray;
 }
+
+ .top nav a:hover{
+    color:black;
+    text-decoration: underline !important;
+}
+
+ .top nav a:link{
+    color:black;
+    text-decoration: none;
+}
+ .top nav a:visited{
+    color: black;
+    
+}
+
+.top nav a {
+    color: black;
+}
+
+header h1 a{
+    color: dodgerblue;
+}
+
+header h1 a:hover{
+    color:dodgerblue;
+    text-decoration: underline !important;
+}
+
+
+header h1 a:link{
+    color:dodgerblue;
+    text-decoration: none;
+}
+ header h1 a:visited{
+    color: dodgerblue;
+    text-decoration: none;
+}
+
 
 h1 {
     text-align: center;
-    color: white;
+    color: dodgerblue;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 10px;
     padding-bottom: 15px;
@@ -100,6 +142,11 @@ section p {
     box-shadow: 0 0 8px white;
     background-repeat: no-repeat;
     background-size: cover;
+    
+}
+
+#backimg-div{
+    padding-bottom: 1%;
 }
 
 .future {
@@ -124,16 +171,35 @@ section h3 {
     display: block;
 }
 
+
+
 h1, h2, h3 {
     text-transform: uppercase;
 }
 
 footer {
     padding-top: 20px;
-    background-color: plum;
+    background-color: gray;
     
 }
 
+footer a:hover{
+    color: deepskyblue !important;
+    text-decoration: none !important;
+}
+
+
+footer a:link{
+    color:black;
+    text-decoration: underline;
+}
+footer a:visited{
+    color: black;
+}
+
+footer  a {
+    color: black;
+}
 
 footer p {
     padding-top: 20px;
@@ -157,6 +223,26 @@ li {
     padding-bottom: 10px;
 }
 
+footer hr{
+
+    border:0.5px solid dimgrey;
+}
+#store-hours{
+    padding-bottom: 10px;
+}
+
+#list {
+    padding-top: 5px;
+}
+
+#list h3{
+    padding-bottom: 5px;
+}
+
+#contact{
+    padding-bottom: 10px;
+}
+
 @media screen and (orientation: portrait) {
     body {
         font-family: Arial, Helvetica, sans-serif;
@@ -164,7 +250,10 @@ li {
     }
     
     nav {
-        text-align: center;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        
         text-transform: uppercase;
         padding-top: 20px;
         padding-bottom: 10px;
@@ -172,7 +261,7 @@ li {
     }
     
     nav a {
-        color: wheat;
+        color: black;
     }
     
     h1 {

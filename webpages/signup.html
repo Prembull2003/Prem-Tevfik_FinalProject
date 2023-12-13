@@ -7,12 +7,21 @@
     <link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
+  <nav>
+    <a href="#">About</a>&nbsp;&nbsp;
+    <a href="../index.html">Home</a>&nbsp;&nbsp;
+    <a href="signup.html">Register</a>&nbsp;&nbsp;
+    <a href="/webpages/ThirdPage_JQuery/index.html">Games</a>&nbsp;&nbsp;
+    <a href="../webpages/FourthPage_CSSGrid_and_FlexBox/index.html">Gallery</a>&nbsp;&nbsp;
+    </nav>
   <header>
     <h1><a href="../index.html">Sports and Blasters</a></h1>
   </header>
     <main>
       <h2>Register</h2>
+      <br>
       <p>Please fill in the form below to create an account.</p>
+      <br>
       <fieldset>
         <form action="contact.html">
             <div class="container">
@@ -35,25 +44,37 @@
               <label for="psw-repeat"><b>Repeat Password</b></label>
               <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
               <hr>
-              <p>By creating an account, you agree to our <a href="#">Terms & Conditions</a>.</p>
+
+              <p >By creating an account, you agree to our <a href="#">Terms & Conditions</a>.</p>
               <br><br>
 
               <input type="checkbox" placeholder="news-let" name="news-let" id="news-let">
-              <label for="news-let"><b>Sign up for Newsletters and Updates</b></label>
+              <labelfor="news-let"><b>Sign up for Newsletters and Updates</b></label>
+
               <br><br><br>
 
               <button type="submit" class="registerbtn">Register</button>
             </div>
             
             <div class="container signin">
-              <p>Already have an account? <a href="#">Sign in</a>.</p>
+              <p class="black-text">Already have an account? <a href="#">Sign in</a>.</p>
             </div>
         </form>
       </fieldset>
     </main>
-    <footer>
-      <p><a href="#">Conditions of Use</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Privacy Notice</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Help</a>&nbsp;&nbsp;</p>
-      <p id="copyright">&copy; Copyright Sports and Blasters</p>
+    <footer>      
+        
+        <ul class="List1">
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Site Map</a></li>
+      </ul>
+      <br>
+      <p class="social">Follow us on social media: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">TikTok</a></p>
+
+      <div id="copyright">
+      <p>&copy; Copyright Sports and Blasters | Prem Bulsara & Tevfik Ozlen 2023</p> </div>
     </footer>
     <script src="../js/signup.js"></script>
 </body>
